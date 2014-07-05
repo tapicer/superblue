@@ -3,7 +3,8 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 require_once ('codebird.php');
 \Codebird\Codebird::setConsumerKey('Np5h53djFakmjcY1kJY8oA', '1H2H8ErxcILCH6tehbG4xUVzGC2qdEZlG21xTMgU');
 $cb = \Codebird\Codebird::getInstance();
-$cb->setToken('15245643-3CUKexYi12SJvvcWWGW2BruxDnVLmX91OosGbCrB7', 'larXQZEcgRfQgvfqBvTSWbHzaIpbfqW0c2nRWtqc');
+//$cb->setToken('15245643-3CUKexYi12SJvvcWWGW2BruxDnVLmX91OosGbCrB7', 'larXQZEcgRfQgvfqBvTSWbHzaIpbfqW0c2nRWtqc');
+$cb->setToken('15245643-BRIDg9HEP8AaPjTfL4jm4IAgzMxbEcPDNAKKyWyXr', '7EPibeYiq1QW0aBPxLNGVNcM0YDiVBoZWGXP6wH8ICO7F');
 $items = $cb->statuses_userTimeline('count=50&screen_name=dolarblue');
 $data = array();
 foreach ($items as $item) {
